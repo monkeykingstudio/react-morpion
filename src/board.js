@@ -1,38 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Header from './header.js';
 
 const Board = () => {
-
-}
-
-// class Board extends React.Component {
-//     renderSquare(i) {
-//       return <Square value={i}/>;
-//     }
+    return <Headline />;
+  };
   
-//     render() {
-//       const status = 'Next player: X';
-  
-//       return (
-//         <div>
-//           <div className="status">{status}</div>
-//           <div className="board-row">
-//             {this.renderSquare(0)}
-//             {this.renderSquare(1)}
-//             {this.renderSquare(2)}
-//           </div>
-//           <div className="board-row">
-//             {this.renderSquare(3)}
-//             {this.renderSquare(4)}
-//             {this.renderSquare(5)}
-//           </div>
-//           <div className="board-row">
-//             {this.renderSquare(6)}
-//             {this.renderSquare(7)}
-//             {this.renderSquare(8)}
-//           </div>
-//         </div>
-//       );
-//     }
-//   }
+  const Headline = () => {
 
-export default Board
+    const [greeting, setGreeting] = useState(
+        'Hello Function Component !'
+    );
+
+    const handleChange = e => setGreeting(e.target.value);
+  
+    return (
+        <div>
+            <Header />
+
+            <h1>{greeting}</h1>
+
+            <input 
+                type='text'
+                value={greeting}
+                onChange={ handleChange }
+            />
+        </div>
+    );
+  };
+
+export default Board;

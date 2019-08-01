@@ -13,5 +13,10 @@ body {
     outline: none;
   }
 
+  .header {
+    background-color: #003830;
+    padding: 20px;
+  }
+
   
   

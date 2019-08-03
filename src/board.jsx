@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './header.js';
+import Header from './header';
 
 const Board = () => {
     return (

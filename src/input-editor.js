@@ -9,7 +9,7 @@ import React, { useState } from 'react';
     
     return (
         <div>
-            <h1>{greeting}</h1>
+            <p>{greeting}</p>
             <input type='text' value={greeting} onChange={ handleChange }/>
         </div>
     );

@@ -4,19 +4,57 @@ body {
     background-color: #060d10;
     color: #b9c4c7;
   }
+
+  h1,h2,h3,h4,h5 {
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
   input {
     background-color: #a7a7a7;
     border-radius: 20px;
     padding: 5px 10px;
     border-color: transparent;
-    color: #231c1c;
+    color: #fff;
     outline: none;
   }
 
   .header {
-    background-color: #003830;
+    background-color: #184e50;
     padding: 20px;
   }
 
+  .result {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+  }
+
+  button {
+    cursor: pointer;
+    margin: 20px 10px 0 0 ;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 110px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #01090c;
+    color: #fff;
+    border-color: #fff9ed;
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  button:hover {
+    background-color: black;
+  }
   
-  
+  .count-click, .post-list {
+    margin: 15px;
+    padding: 25px;
+    background-color: #0e1d23;
+  }

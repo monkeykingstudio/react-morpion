@@ -26,14 +26,14 @@ const StarRating = (props) => {
 
     return (
         <div className="count-click">
-            { 
+            {/* { 
                 Object.keys(rating).map((key) => (
                     <div key={key}>
                         <span>key value: {rating[key]}</span>
                     </div>
                 ))
-            }
-            <h1>{ componentTitle }</h1>
+            } */}
+            <h1>{ `${componentTitle} ${props.id}`}</h1>
             <div>
                 <p>
                     <strong>{ `rating : ${rating.star}` }</strong>

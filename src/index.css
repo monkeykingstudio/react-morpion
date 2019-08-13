@@ -5,6 +5,7 @@ body {
     color: #b9c4c7;
   }
 
+
   h1,h2,h3,h4,h5 {
     margin: 0;
     margin-bottom: 15px;
@@ -22,8 +23,12 @@ body {
   }
 
   .header {
-    background-color: #184e50;
+    background-color: #000;
     padding: 20px;
+  }
+  
+  .header h1 {
+    margin:20px 5px;
   }
 
   .result {
@@ -54,7 +59,8 @@ body {
   }
   
   .count-click, .post-list {
-    margin: 15px;
+    margin: 25px 0;
     padding: 25px;
+    border: 2px dotted #184e50;
     background-color: #0e1d23;
   }

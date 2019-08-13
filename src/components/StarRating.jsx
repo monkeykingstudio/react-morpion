@@ -3,6 +3,8 @@ import axios from 'axios';
 
 const StarRating = (props) => {
     const componentTitle = 'Star Rating Component';
+    const totalStars = props.nbStar;
+    console.log(totalStars);
   
     const [rating, setRating] = useState( { "star": 0 } );
 
@@ -14,15 +16,13 @@ const StarRating = (props) => {
         setRating(result.data[props.id]);
         }; 
         fetchData();
-    });
+    },[props.id]);
 
     const saveClicks = (e) => {
             axios.put(`http://localhost:4000/rating/${props.id}`, { star: e })
             .then(results => {console.log(results)})
             .catch(err => {console.log(err)})
     }
-
-    // console.log(rating);
 
     return (
         <div className="count-click">
@@ -35,8 +35,16 @@ const StarRating = (props) => {
             } */}
             <h1>{ `${componentTitle} ${props.id}`}</h1>
             <div>
+
+                {/* 
+                    TODO: 
+                   - max: 5
+                   - visual stars
+                   - clickable logic 
+                */}
+
                 <p>
-                    <strong>{ `rating : ${rating.star}` }</strong>
+                    <strong>{ `Rating : ${rating.star}` }</strong>
                 </p>
                 <button onClick={ () => {
                         const newRating = rating.star + 1; 

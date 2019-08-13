@@ -36,7 +36,7 @@ const CountClick = (props) => {
                 <span className="result">Counter value: { clicked.clicks }</span>
 
                 <button onClick={ () => {setClicked(clicked.clicks + 1)} }>+1</button>
-                <button onClick={ () => {setClicked(clicked[props.id] - 1)} }>+1</button> 
+                <button onClick={ () => {setClicked(clicked[props.id] - 1)} }>-1</button> 
                 {/* <button onClick={ () => {setClicked(clicked.clicks + 1);saveClicks(clicked.clicks + 1)} }>+1</button>
                 <button onClick={ () => {setClicked(clicked.clicks - 1);saveClicks(clicked.clicks - 1)} }>+1</button> */}
             </div>

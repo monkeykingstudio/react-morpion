@@ -15,8 +15,10 @@ const App = () => {
             <Board />
             {/* <PostList /> */}
             <CountClick id='0'/>
-            <StarRating id='0' />
-            <StarRating id='1' />
+            {/* <StarRating id='0' />
+            <StarRating id='1' /> */}
+            <StarRating id='2' nbStar={5} />
+
         </div>
     );
 };

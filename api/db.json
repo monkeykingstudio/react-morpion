@@ -35,12 +35,7 @@
   ],
   "clicked": [
     {
-      "clicks": 20,
-      "id": 1
-    },
-    {
-      "clicks": 50,
-      "id": 2
+      "clicks": 20
     }
   ]
 }

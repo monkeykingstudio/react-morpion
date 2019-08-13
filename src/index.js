@@ -12,7 +12,7 @@ const App = () => {
         <div>
             <Board />
             {/* <PostList /> */}
-            <CountClick titre='tata' id='1'/>
+            <CountClick id='0'/>
         </div>
     );
 };

@@ -6,37 +6,33 @@ const CountClick = (props) => {
     const [clicked, setClicked] = useState([]);
 
     useEffect(() => {
-
-
-        // axios put here ?
-
         const fetchData = async () => {
             const result = await axios(
                 'http://localhost:4000/clicked'
             );  
         setClicked(result.data);
         };
-        fetchData();  
+        fetchData(); 
     },[]);
 
+    console.log('clicked array', JSON.stringify(clicked));
+
+    // console.log('clicked array "clicks"', clicked[0].clicks);
+
     const saveClicks = (e) => {
-        console.log('e', e);
-            axios.put(`http://localhost:4000/clicked/${props.id}`, { clicks: e })
-            .then(results => {console.log(results)})
-            .catch(err => {console.log(err)})
+        console.log('valeur de e saveclicks', e);
+        axios.put(`http://localhost:4000/clicked/${props.id}`, { clicks: e })
+        .then(results => {console.log(results)})
+        .catch(err => {console.log(err)})      
     }
-    
+  
     return (
         <div className="count-click">
             <h1>{ componentTitle + ' ' + props.id }</h1>
             <div>
-                {/* <span className="result">Clicked: { clicked }</span>
-                <button onClick={ () => {setClicked(clicked + 1); saveClicks(clicked + 1)} }>+1</button>
-                <button onClick={ () => {setClicked(clicked - 1); saveClicks(clicked - 1)} }>-1</button> */}
-                <button onClick={ () => {saveClicks(clicked + 1)} }>+1</button>
-                <button onClick={ () => {saveClicks(clicked - 1)} }>-1</button>
-
-
+                <span className="result">Counter value: { clicked.clicks }</span> 
+                <button onClick={ () => {setClicked(clicked.clicks + 1);saveClicks(clicked.clicks + 1)} }>+1</button>
+                <button onClick={ () => {setClicked(clicked.clicks - 1);saveClicks(clicked.clicks - 1)} }>+1</button>
             </div>
         </div>
     );

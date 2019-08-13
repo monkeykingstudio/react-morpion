@@ -35,8 +35,12 @@
   ],
   "clicked": [
     {
-      "clicks": "[object Object]1",
+      "clicks": 20,
       "id": 1
+    },
+    {
+      "clicks": 50,
+      "id": 2
     }
   ]
 }

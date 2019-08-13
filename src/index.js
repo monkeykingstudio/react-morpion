@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 // import PostList from './PostList'
 import Board from './board';
 import CountClick from './components/CountClick';
+import StarRating from './components/StarRating';
+
 
 import './index.css';
 
@@ -13,6 +15,8 @@ const App = () => {
             <Board />
             {/* <PostList /> */}
             <CountClick id='0'/>
+            <StarRating id='0' />
+            <StarRating id='1' />
         </div>
     );
 };

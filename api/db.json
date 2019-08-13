@@ -35,7 +35,17 @@
   ],
   "clicked": [
     {
-      "clicks": 20
+      "clicks": 25
+    }
+  ],
+  "rating": [
+    {
+      "star": 9,
+      "id": 0
+    },
+    {
+      "star": 5,
+      "id": 1
     }
   ]
 }

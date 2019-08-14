@@ -19,9 +19,9 @@ const StarRating = (props) => {
     },[props.id]);
 
     const saveClicks = (e) => {
-            axios.put(`http://localhost:4000/rating/${props.id}`, { star: e })
-            .then(results => {console.log(results)})
-            .catch(err => {console.log(err)})
+        axios.put(`http://localhost:4000/rating/${props.id}`, { star: e })
+        .then(results => {console.log(results)})
+        .catch(err => {console.log(err)})
     }
 
     return (

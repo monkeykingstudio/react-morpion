@@ -5,6 +5,39 @@ body {
     color: #b9c4c7;
   }
 
+  .star-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #0f1e24;
+  }
+
+  .star {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 35px;
+    width: 35px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all, .5s;
+  }
+
+  .star-unselected:hover {
+    transition: all, .1s;
+    background-image: url('./img/starRating/star-fill.svg');
+  }
+
+  .star-unselected {
+    background-image: url('./img/starRating/star.svg');
+  }
+
+  .star-selected {
+    background-image: url('./img/starRating/star-fill.svg');
+  }
+
+  
+
 
   h1,h2,h3,h4,h5 {
     margin: 0;
